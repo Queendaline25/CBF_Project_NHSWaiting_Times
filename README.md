@@ -18,7 +18,7 @@ Secondary Objectives:
     *   Monthly RTT performance data published by NHS England. https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/rtt-data-2024-25/
 
     *   Includes metrics such as:
-        *   Number of patients on incomplete pathways
+        *   Number of patients on admitted, non-admitted and complete pathways
         *   Percentage waiting over 18 weeks
         *   Number waiting over 52 weeks
         *   Provider level performance
@@ -46,18 +46,19 @@ https://geoportal.statistics.gov.uk/datasets/ab70b4d242464355a2e7859226f8e2b9
 1. Data Collection
     *   Downloaded RTT monthly datasets from NHS England.
     *   Obtained IMD 2019 (or latest available) dataset from GOV.UK.
-    *   Collected provider code mappings from ODS.
+    * Collected Provider level data with postcodes from NHS England
     *   Imported all datasets into SQL.
 2. Data Cleaning & Preparation
     *   Standardised column names and data types.
     *   Handled missing or inconsistent provider codes.
     *   Removed suppressed or incomplete records.
-    *   Convert IMD scores into deciles for easier comparison
-    *   Create a clean provider to their catchment area IMD decile number
+    *  Mapped provider level data from NHS England and ONSPD by joining both dataset on postcodes inorder to retrieve the provider LSOA 2011 numbers
+    * Used the retrieved LSOA numbers to get the IMD decile number for each NHS provider catchment area
     *   Validated joins using Provider codes
 3. Data Integration
     *   Join RTT data with provider level region data.
-    *   Aggregated IMD scores to the provider catchment area  using published provider catchment IMD data available in UK government website.
+    *   Retrieved IMD decile numbers from published  IMD data available in UK government website For NHS providers catchment area.
+   *  Mapped the cleaned RTT dataset with the IMD table for index of multiple deprivation(IMD) analysis
     *   Created a combined dataset linking:
         *   RTT metrics
         *   IMD deciles
@@ -69,7 +70,7 @@ https://geoportal.statistics.gov.uk/datasets/ab70b4d242464355a2e7859226f8e2b9
 *   Data Modelling Tools (Fact and Dimension Table)
 *   Visualization and Reporting tools (Looker Studio)
 *   Version Control and collaboration tools(Git and GitHub)
-### Expected Outcomes:
+### Key Findings and Insights:
 *   Clear Understanding of RTT Performance Across Providers within the 18weeks timeline and backlogs
 *   Insight Into the Relationship Between Deprivation and Waiting Times
 *   A Clean, Well Modelled Star schema Fact and Dimension table
