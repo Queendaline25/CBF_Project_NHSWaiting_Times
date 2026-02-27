@@ -44,7 +44,7 @@ https://geoportal.statistics.gov.uk/datasets/ab70b4d242464355a2e7859226f8e2b9
 ├── Data_Raw        # Original RTT datasets (untouched)
 ├── Data_Clean      # Cleaned and transformed datasets
 ├── SQL_scripts     # SQL scripts for cleaning,analysing and modelling
-├── Data_Modelling  # Star Schema EER diagram
+├── Data_Modelling  # Star Schema EER diagram and table structure
 ├── Dashboard       # Looker Studio link + screenshots
 ├── Docs            # Data dictionary, and notes
 ├── images          # Images used in README
