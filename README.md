@@ -33,7 +33,7 @@ https://geoportal.statistics.gov.uk/datasets/ab70b4d242464355a2e7859226f8e2b9
 ### Tools and Resources:
 *   Microsoft Excel (V lookup, Index and Match)
 *   MYSQL (Joins, Group BY, CTEs, Window functions etc)
-*   Data Modelling Tools (Fact and Dimension Table)
+*   Data Modelling Tools (dbdiagram.io)
 *   Visualization and Reporting tools (Looker Studio)
 *   Version Control and collaboration tools(Git and GitHub)
 
