@@ -60,14 +60,16 @@ https://geoportal.statistics.gov.uk/datasets/ab70b4d242464355a2e7859226f8e2b9
 
 
 ###  Methodology: 
-1. Data Collection
+1. #### Data Collection
     *   Downloaded RTT monthly datasets from NHS England.
     *   Obtained IMD 2019 (or latest available) dataset from GOV.UK.
     * Collected Provider level data with postcodes from NHS England.
     * Data understanding of the RTT dataset and reporting
     *   Imported all datasets into SQL.
-2. Data Cleaning & Preparation:
-Raw RTT datasets contained inconsistencies in provider codes, specialty names and Time period formats. Cleaning steps included:
+
+2. #### Data Cleaning & Preparation:
+   Raw RTT datasets contained inconsistencies in provider codes, specialty names and Time period formats. Cleaning steps included:
+
     *   Standardised Time_Period column into a consistent Year-Month format data types.
     *   Removed duplicate rows and corrected inconsistent provider codes.
     *   Removed suppressed or incomplete records.
@@ -75,7 +77,7 @@ Raw RTT datasets contained inconsistencies in provider codes, specialty names an
     *  Mapped provider level data from NHS England and ONSPD by joining both dataset on postcodes inorder to retrieve the provider LSOA 2011 numbers
     * Used the retrieved LSOA numbers to get the IMD decile number for each NHS provider catchment area
     *   Validated joins using Provider codes
-3. Data Integration
+3. #### Data Integration
     *   Join RTT data with provider level region data.
     *   Retrieved IMD decile numbers from published  IMD data available in UK government website For NHS providers catchment area.
    *  Mapped the cleaned RTT dataset with the IMD table for index of multiple deprivation(IMD) analysis
@@ -84,45 +86,45 @@ Raw RTT datasets contained inconsistencies in provider codes, specialty names an
         *   IMD deciles
         *   Provider names and codes
 
-4.Data Modelling(Star Schema):
+4. #### Data Modelling(Star Schema):
 
-To support efficient analysis and dashboarding, the data was modelled into a star schema:
-* Fact table: RTT activity and waiting time metrics at provider, treatment function and month level.
+    To support efficient analysis and dashboarding, the data was modelled into a star schema:
+    * Fact table: RTT activity and waiting time metrics at provider, treatment function and month level.
 
-* Dimension tables:
+    * Dimension tables:
 
-  * dim_time for date attributes(year,month and quarter)
-   * dim_provider for provider names,Districts, LSOA and decile numbers.
-   * dim_treatment_function for RTT treatment function codes
+    * dim_time for date attributes(year,month and quarter)
+    * dim_provider for provider names,Districts, LSOA and decile numbers.
+    * dim_treatment_function for RTT treatment function codes
 
 
-5.Transformations and Feature Engineering:
-Additional fields were created in looker studio to support deeper analysis:
- * Percentage change in activity and waiting times
- * performance indicators such as % within 18 weeks and % within 52 weeks
- * deprivation related calculations.
+5. #### Transformations and Feature Engineering:
+    Additional fields were created in looker studio to support deeper analysis:
+    * Percentage change in activity and waiting times
+    * performance indicators such as % within 18 weeks and % within 52 weeks
+    * deprivation related calculations.
 
- 6 . Exploratory Data Analysis:
+6. ####  Exploratory Data Analysis:
 
-  Looker studio was initially used to explore:
-  * Trends in activity and waiting times
-  * provider level variations
-  * treatment function level performance
-  * outliers and unusual patterns.
- 
- EDA  informed which metrics and visuals were most meaningful for the dashboard
+    Looker studio was initially used to explore:
+    * Trends in activity and waiting times
+    * provider level variations
+    * treatment function level performance
+    * outliers and unusual patterns.
+    
+    EDA  informed which metrics and visuals were most meaningful for the dashboard
 
- 7. Dashboard Design and visualizations
+ 7. #### Dashboard Design and visualizations
 
- The cleaned and modelled data was connected to looker studio to build an interactive dashboard. Design decisions included:
+    The cleaned and modelled data was connected to looker studio to build an interactive dashboard. Design decisions included:
 
- * KPI score cards with intriquing insights
- * Trend charts and waiting time patterns between Admitted and Non Admitted RTT.
- * Treatment functions breakdowns for waiting time comparison
+    * KPI score cards with intriquing insights
+    * Trend charts and waiting time patterns between Admitted and Non Admitted RTT.
+    * Treatment functions breakdowns for waiting time comparison
 
- Provider level waiting times comparison among different treatment functions.
+    * Provider level waiting times comparison among different treatment functions.
 
- * Index of multiple deprivation(IMD) views to highlight deprivations levels.
+    * Index of multiple deprivation(IMD) views to highlight deprivations levels.
 
 
 
