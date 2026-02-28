@@ -56,5 +56,17 @@ explaines clearer the Average waiting times between the admitted and non admitte
 
 ![Deprivation Level in non-admitted](<RTT Waiting List By Provider (CBF Project)_Untitled Page_Bar chart (3).png>)(https://lookerstudio.google.com/s/qUgUQT0JFZw) Fig 6.0 non-admitted
 
+And also the following treatment functions with their respective waiting in weeks, have the highest wait in deprived areas:
+
+Other - Surgical Services 13169
+Other - Medical Services 11878
+Dermatology Service	 11872
+Gynaecology Service	 10486
+General Surgery Service	 10242.
+
+Fig 7.0 explaines it better below.
+
+![Treatment function by total wait in deprived area](<RTT Waiting List By Provider (CBF Project)_Untitled Page_Pie chart (1).png>)(https://lookerstudio.google.com/s/sw8tzRsYa7o) Fig 7.0
+
 
  
