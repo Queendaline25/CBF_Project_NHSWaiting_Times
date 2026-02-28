@@ -49,7 +49,12 @@ For admitted RTT, The total waiting waiting difference betweeen the affluent(IMD
 
 ![alt text](<RTT Waiting List By Provider (CBF Project)_Untitled Page_Bar chart (1).png>)(https://lookerstudio.google.com/s/oUqZhcrNf7o) Fig 4.0
 
+To eleborate further, the below visualisations images
+explaines clearer the Average waiting times between the admitted and non admitted RTT when compared to the least deprived areas (IMD decile 9 and 10), most deprived(IMD decile 1 and 2) and those who fall in the middle of the deprivation group.
 
+![Deprivation level in admitted RTT](<RTT Waiting List By Provider (CBF Project)_Untitled Page_Bar chart (2).png>)(https://lookerstudio.google.com/s/rbaBiYDEgjM) Fig 5 Admitted
+
+![Deprivation Level in non-admitted](<RTT Waiting List By Provider (CBF Project)_Untitled Page_Bar chart (3).png>)(https://lookerstudio.google.com/s/qUgUQT0JFZw) Fig 6.0 non-admitted
 
 
  
