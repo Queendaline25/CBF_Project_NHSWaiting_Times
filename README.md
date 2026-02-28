@@ -47,7 +47,6 @@ https://geoportal.statistics.gov.uk/datasets/ab70b4d242464355a2e7859226f8e2b9
 ├── Data_Modelling  # Star Schema EER diagram and table structure
 ├── Dashboard       # Looker Studio link + screenshots
 ├── Docs            # Data dictionary, and notes
-├── images          # Images used in README
 └── README.md       # Project documentation
 ```
 ### How to Run the Project
@@ -129,8 +128,10 @@ https://geoportal.statistics.gov.uk/datasets/ab70b4d242464355a2e7859226f8e2b9
 
 
 ### Key Findings and Insights:
-*   Clear Understanding of RTT Performance Across Providers within the 18weeks timeline and backlogs
-*   Insight Into the Relationship Between Deprivation and Waiting Times
+*   Clear Understanding of RTT Performance Across Providers within the 18weeks timeline and backlogs were considered for the key insights.
+* Also, Insights Into the Relationships Between Deprivation and Waiting Times were highly analysed.
+
+For key findings and insights section, please kindly go to [KeyFindings_insights.md](Dashboard/KeyFindings_Insights.md)
 
 ### Ethical Considerations:
 1. Data Privacy and Confidentiality
