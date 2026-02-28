@@ -1,4 +1,4 @@
-Glossary of Data Terms used in project
+### Glossary of Data Terms used in project
 | Name | Definition|
 | ------------- | ------------- |
 | RTT |Referal to Treatment  |
