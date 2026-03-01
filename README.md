@@ -133,7 +133,22 @@ https://geoportal.statistics.gov.uk/datasets/ab70b4d242464355a2e7859226f8e2b9
 
 For key findings and insights section, please kindly go to [KeyFindings_insights.md](Dashboard/KeyFindings_Insights.md)
 
-### Ethical Considerations:
+### Future Improvements:
+
+Below are the improvements that would improve this project:
+1. Automate Monthly Data Refresh:
+The data used for this project required lots of downloads and cleaning. A future improvement will be to build an automated pipeline, using a dbt or cloud warehouse that ingests new monthly RTT data,validates it and updates the dashboard.
+
+
+2. Expand the data model to include diagnostics and demographics like population estimates or age-band distributions to allow richer analysis.
+
+3. Add provider and Treatment function benchmarking:
+    Benchmarking providers against national,regional or ICS averages would help identify outliers and best performers.
+
+4. Strengthen Data Quality and Governance: Although reasonable quality checks were carried out in this project but introducing more formal data quality checks such as row count validation,null detection,schema consistency and suppresion handling would improve reliability.
+
+
+### Ethical Considerationss:
 1. Data Privacy and Confidentiality
 *   All data used is publicly available and aggregated at provider or geographic level.
 *   No patient level or identifiable information is included.
