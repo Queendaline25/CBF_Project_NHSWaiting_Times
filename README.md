@@ -161,4 +161,10 @@ The data used for this project required lots of downloads and cleaning. A future
 *   Provider code mappings and IMD assignments are validated and clearly explained.
 *   Limitations—such as data suppression, missing values, or geographic approximations—are openly stated.
 
+### Acknowledgements
+
+This project used publicly available NHS England Referal to Treatment(RTT) datasets, and I acknowledge their commitment to open data, which made this project possible. I also appreciate the clarity of the RTT guidance and documentation that supported the modelling and interpretation of the metrics.
+
+Finally, I am grateful to Coding Black Females(CBF) for the opportunity offered to me to partcipate in their Data Analysis bootcamp  and also to my instructors for their guidance,support and encouragement throughout this project. Their teaching consolidated the foundation that allowed me to build an end to end Referal to Treatment(RTT) analysis with confidence.
+
 
